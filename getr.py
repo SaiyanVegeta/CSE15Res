@@ -12,6 +12,7 @@ maps=pickle.load(open('Finals','rb'))
 # for i in open('final.txt').readlines():
 # 	i=i.strip().split()
 # 	maps[i[0]]=i[1]
+maps['15075028']='1516'
 if N in maps.keys():
 	has=hashlib.md5(N.encode('utf-8')).hexdigest()
 	cmd='http://10.1.131.10/grade_sheet/index.php?sname='+N+'&sid='+maps[N]+'&msname='+has+'&ms1=95aea4c3483c560373356d1ba3fd73cc'
